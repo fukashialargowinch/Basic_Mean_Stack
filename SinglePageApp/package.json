@@ -1,0 +1,13 @@
+{
+  "name": "sahil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app"
+  },
+  "author": "",
+  "license": "ISC"
+}

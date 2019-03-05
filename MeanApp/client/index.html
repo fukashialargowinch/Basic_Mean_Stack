@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Mean App</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css"/>
+    <script src="./public/js/angular.min.js"></script>
+    <script src="./public/js/angular-route.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./controller/UserController.js"></script>
+  </head>
+  <body>
+    <h3>This is Master page Content</h3>
+    <a href="#/">Home</a>
+    <a href="#/about">About Us</a>
+    <a href="#/contact">Contact Us</a>
+    <div ng-view>
+
+    </div>
+  </body>
+</html>

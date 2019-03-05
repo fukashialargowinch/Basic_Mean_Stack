@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-6">
+      <div class="form-group" >
+        <label>FirstName</label>
+        <input type="text" placeholder="First Name" ng-model="User.FirstName" class="form-control" required/>
+      </div>
+      <div class="form-group">
+          <label>LastName</label>
+        <input type="text" placeholder="Last Name" ng-model="User.LastName" class="form-control" required/>
+      </div>
+      <div class="form-group">
+          <label>Email Id</label>
+        <input type="text" placeholder="Email" ng-model="User.Email" class="form-control" required/>
+      </div>
+      <div class="form-group">
+          <label>Age</label>
+        <input type="text" placeholder="Age" ng-model="User.Age" class="form-control" required/>
+      </div>
+      <div class="form-group">
+          <label>Password</label>
+        <input type="text" placeholder="Password" ng-model="User.Password" class="form-control" required/>
+      </div>
+      <div class="form-group">
+          <!-- <label>Confirm-Password</label>
+        <input type="text" placeholder="Country" ng-model="User.rePassword" class="form-control"/>
+      </div> -->
+      <div class="form-group">
+        <button class="btn btn-success" ng-click="RegisterUser()">Register</button>
+      </div>
+    </div>
+      <div class="col-md-4"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <table class="table">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <!-- <th></th> -->
+        </tr>
+        <tr ng-repeat="x in UserDetails">
+          <td>{{x.FirstName}}</td>
+          <td>{{x.LastName}}</td>
+          <td>{{x.Email}}</td>
+          <td>{{x.Age}}</td>
+          <!-- <td>{{x.Country}}</td> -->
+      <td><button ng-click="DeleteUser(x)" class="glyphicon glyphicon-trash btn btn-danger"></button></td>
+
+      <td><button ng-click="updateUser(x)" class="glyphicon glyphicon-check btn btn-danger"></button></td>
+    </tr>
+      </table>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
